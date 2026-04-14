@@ -1,0 +1,117 @@
+div.commentText {
+  width: 100%;
+}
+
+div.poster {
+  margin: 10px;
+}
+
+p.review {
+  white-space: pre-line;
+}
+
+.bigPicture {
+  float: right;
+}
+div.pet_single_container {
+  background-color: rgb(247, 246, 241);
+  margin: 0rem 8rem;
+  padding: 0rem 2rem;
+  border-radius: 12px;
+}
+
+div.headers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+img.pet_image {
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.pet_info_left {
+  flex: 1;
+  text-align: center;
+  object-fit: cover;
+  margin: 2rem;
+}
+
+.pet_info_right {
+  flex: 2;
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+div.pet_text {
+  margin: 3rem;
+}
+
+div.comments_section {
+  background-color: rgb(91, 200, 249);
+  margin: 6rem;
+  padding: 2rem;
+  text-align: center;
+}
+h4.comments_title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+p.comments_txt {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+p.comments_date {
+  margin-bottom: 4px;
+  color: black;
+  font-size: 1rem;
+}
+button.add_comment_btn {
+  margin: 1rem;
+  color: black;
+  background: white;
+  border-radius: 5px;
+  padding: 0.6rem 2rem;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.add_comment_btn:hover {
+  font-size: 2rem;
+  background-color: black;
+}
+strong.comments_date {
+  padding: 8px;
+}
+p.user_comments {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 968px) {
+  div.pet_single_container {
+    margin: 0;
+  }
+  div.headers {
+    display: block;
+  }
+  div.pet_text, .pet_info_left {
+    margin: 1rem;
+  }
+  div.comments_section {
+    margin: 0;
+  }
+  h4.comments_title {
+    font-size: 2rem;
+  }
+  p.user_comments, button.add_comment_btn {
+    font-size: 1rem;
+  }
+}

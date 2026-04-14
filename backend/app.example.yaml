@@ -1,0 +1,5 @@
+runtime: nodejs20
+
+env_variables:
+  PET_DB_URL: "your_mongodb_connection_string"
+  PET_COLLECTION: "pet_adoption_db"
