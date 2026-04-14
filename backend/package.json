@@ -1,14 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Group Names:",
-  "homepage": "https://github.com/CS5610-WebDev-Summer25/group-project-backend-group-version-petadoptionproject#readme",
+  "description": "Name:",
+  "homepage": "https:",
   "bugs": {
-    "url": "https://github.com/CS5610-WebDev-Summer25/group-project-backend-group-version-petadoptionproject/issues"
+    "url": "https:"
   },
   "repository": {
     "type": "git",
-    "url": ""url": "git+https://github.com/abram0102/PetAdoption.git""
+    "url": ""url": "git+https""
   },
   "license": "ISC",
   "author": "",
