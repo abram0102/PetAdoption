@@ -122,23 +122,3 @@ You'll also need:
 - A Cloudinary unsigned upload preset — `UploadPet.js` currently has the
   cloud name and preset hardcoded as placeholders and needs them swapped for
   real values.
-
-## Known simplifications / ideas for extension
-
-- **No server-side auth verification.** The backend never verifies the
-  Google ID token; it trusts whatever `user_id` the frontend sends. Fine for
-  a demo, but a real deployment would verify the token server-side (e.g. with
-  `google-auth-library`) before trusting the identity on any write.
-- **No pagination.** `PetList` fetches every pet in one request and filters
-  client-side; `PetsDAO.getAllPets` already returns a total count, which
-  would support adding real pagination without changing the frontend's data
-  shape much.
-- **No input validation/schema enforcement** beyond basic "is this field
-  present" checks in the controllers — no request validation middleware, no
-  Mongoose-style schema on the MongoDB documents.
-- **No rate limiting**, which matters for the public write endpoints
-  (`postPet`, `comments`, `favorites`) given there's no server-side identity
-  check either.
-- **Comment/favorite ownership checks live in the React components**
-  (`Pet.js`'s `isOwner`), not the API — the delete-comment and delete-pet
-  endpoints don't themselves confirm the requester owns the resource.
